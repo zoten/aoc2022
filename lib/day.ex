@@ -1,5 +1,5 @@
 defmodule Aoc.Day do
-  @callback solution(part :: integer(), input :: list(String.t())) :: any()
+  @callback solution(part :: integer(), input :: list(String.t()) | String.t()) :: any()
 
   @callback solve(part :: integer(), env :: :test | :main) :: any()
   @callback tsolve(part :: integer()) :: any()
